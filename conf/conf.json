@@ -1,0 +1,8 @@
+{
+    "port":"8080",
+    "es":{
+        "server":"localhost",
+        "port":"9200",
+        "index":"movies"
+    }
+}

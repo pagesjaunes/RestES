@@ -1,0 +1,14 @@
+[
+	{
+		"version" : "0.0.2",
+		"comment" : "Add generic rest call for elasticsearch",
+		"date" : "2013-09-15",
+		"author" : "Fabrice Depaulis"
+	},
+	{
+		"version" : "0.0.1",
+		"comment" : "First version",
+		"date" : "2013-09-14",
+		"author" : "Fabrice Depaulis"
+	}
+]

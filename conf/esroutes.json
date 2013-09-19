@@ -1,0 +1,24 @@
+[
+    {
+        "name":"getMovieByTitle",
+        "path":"/getMovieByTitle/:title",
+        "esQuery":{
+            "query":{
+                "field":{
+                    "title":"@title@"
+                }
+            }
+        }
+    },
+    {
+        "name":"getMovieByYear",
+        "path":"/getMovieByYear/:year",
+        "esQuery":{
+            "query":{
+                "field":{
+                    "year":"@year@"
+                }
+            }
+        }
+    }
+]
