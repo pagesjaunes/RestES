@@ -3,9 +3,8 @@ module.exports.search = function(req, res, next) {
 	// Replace args "@arg@" by req.params.arg so as to let evaluation possible
 	// This operation requires the json object to be transform to a string
 	var query = JSON.stringify(req.app.get(req.route.path));
-    query = query.replace('"@', "req.params."); 
-    query = query.replace('@"', ""); 
     
+    query = query.replace(/"@([^@"]+)@"/g, "req.params.$1");
     // eval creates the json object from the string
 	es.search(eval('('+query+')'),
 		function(err, data) {
